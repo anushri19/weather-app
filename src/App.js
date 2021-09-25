@@ -45,7 +45,6 @@ const App = () => {
         }
         else{
           setSeason("summer")
-
         }
       }
     }
@@ -66,13 +65,11 @@ const App = () => {
     <div className ={season}>
     <div className="App">
       <header className="App-header ${season}">
-      <h1>Hi {userDetails.name} ! Here are the weather details of your location.</h1>
-      <div className = "overLap">
-      <img src={"http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png"} alt="logo" className="weather" />
-      <img src={earth} alt="earth" className="earth"/>
-      </div>
-      
-        
+        <h1>Hi {userDetails.name} ! Here are the weather details of your location.</h1>
+        <div className = "overLap">
+        <img src={"http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png"} alt="logo" className="weather" />
+        <img src={earth} alt="earth" className="earth"/>
+        </div>
         <ul><b>
         <li>Weather condition: {weather.weather[0].main}</li>
         <li>Pressure:  {weather.main.pressure} hPa</li>
