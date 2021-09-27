@@ -4,9 +4,9 @@ import App from './App';
 
 function Home() {
   return(
-    <Router basename={window.location.pathname || ''}>
+    <Router>
       <Switch>
-        <Route exact path="/weather-app" component={Login}></Route>
+        <Route exact path="/" component={Login}></Route>
         <Route exact path="/weather-report" component={App}></Route>
       </Switch>
     </Router>
